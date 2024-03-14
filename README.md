@@ -14,7 +14,7 @@ Aplicação Java com container para exemplo
 #### Clone
 
 ```
-git clone https://github.com/acnaweb/ping.git
+git clone https://github.com/JoaoMilanezi/fiap-checkpoint1
 ```
 
 ## Execução
@@ -25,7 +25,7 @@ git clone https://github.com/acnaweb/ping.git
 * Criar imagem
 
 ```
-docker build -t ping .
+docker build -t fiap-checkpoint1 .
 ```
 
 * Executar container
@@ -37,39 +37,6 @@ docker run -d -p 8080:8080 -e PROFILE=<prd|dev|stg> ping
 ```
 
 ## Container Registry
-
-
-#### Docker Hub
-
-* Login
-
-```
-docker login -u <username>
-```
-
-* Criar imagem pronta para upload (método 1 - criando nova imagem)
-
-
-```
-docker build -t <username>/ping .
-```
-
-
-* Criar imagem pronta para upload (método 2 - renomeando imagem existente)
-
-
-```
-docker tag ping acnaweb/ping
-```
-
-
-* Upload de imagem para o Docker Hub
-
-
-```
-docker push acnaweb/ping 
-```
-
 
 
 #### Navegação
@@ -89,10 +56,7 @@ http://localhost:8080/ping
 
 ## Contatos
 
-- Desenvolvedor 1 - desenvolvedor1@email.com
-- Desenvolvedor 2 - desenvolvedor2@email.com
+- João Pedro Bueno Milanezi rm88322 - jpbmila2@gmail.com
 
-## Referencias
 
- - [UOL](https://www.uol.com.br/)
- - [Gov br](https://www.gov.br/)
+
