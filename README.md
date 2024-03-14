@@ -21,27 +21,23 @@ Antes de executar esta aplicação, é preciso obter a imagem do Docker Hub. Par
 
 docker pull jotamilanezi/fiap-checkpoint1
 
-'''bash
-'''
+```bash
 
 Isso fará com que a imagem necessária para a execução e aplicação seja aplicada em seu ambiente local
 
-'''bash
-'''
+```
 
 Para executar com perfil "dev", utilize o seguinte comando:
 
 docker run -d -p 8080:8080 -e PROFILE=dev jotamilanezi/fiap-checkpoint1
 
-'''bash
-'''
+```bash
 
 Para executar com perfil "stg", utilize o seguinte comando:
 
 docker run -d -p 8080:8080 -e PROFILE=stg jotamilanezi/fiap-checkpoint1
 
-'''bash
-'''
+```
 
 Para executar com perfil "prd", utilize o seguinte comando:
 
