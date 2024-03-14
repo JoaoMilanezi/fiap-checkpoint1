@@ -9,50 +9,46 @@ Aplicação Java com container para exemplo
 - Acesso a internet
 - Acesso ao Docker Hub
 
-## Instalação
-
 #### Clone
 
 ```
 git clone https://github.com/JoaoMilanezi/fiap-checkpoint1
 ```
 
-## Execução
+## Instruções
+
+Antes de executar esta aplicação, é preciso obter a imagem do Docker Hub. Para isso, utilize o comando a seguir:
+
+docker pull jotamilanezi/fiap-checkpoint1
 
 
-#### Docker
+Isso fará com que a imagem necessária para a execução e aplicação seja aplicada em seu ambiente local
 
-* Criar imagem
+Para executar com perfil "dev", utilize o seguinte comando:
 
-```
-docker build -t fiap-checkpoint1 .
-```
-
-* Executar container
-
-spring.profiles.active=dev
-
-```
-docker run -d -p 8080:8080 -e PROFILE=<prd|dev|stg> ping
-```
-
-## Container Registry
+docker run -d -p 8080:8080 -e PROFILE=dev jotamilanezi/fiap-checkpoint1
 
 
-#### Navegação
+Para executar com perfil "stg", utilize o seguinte comando:
 
-- Base
+docker run -d -p 8080:8080 -e PROFILE=stg jotamilanezi/fiap-checkpoint1
+
+
+Para executar com perfil "prd", utilize o seguinte comando:
+
+docker run -d -p 8080:8080 -e PROFILE=prd jotamilanezi/fiap-checkpoint1
+
+
+
+#### Navegação / Acesso a aplicação
+
+Após o processo de duplicação e execução do mesmo você poderá acessa-lo utilizando o seguinte endereço
 
 http://localhost:8080
 
-- Endpoint que retorna string "Pong"
-
-http://localhost:8080/ping 
+e também é necessário se certificar de que você tenha o Docker instalado e em execução antes de executar os comandos
 
 
-## Features (Funcionalidades)
-
-- Múltiplos profiles
 
 ## Contatos
 
