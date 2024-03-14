@@ -1,4 +1,4 @@
-# Ping
+# fiap-checkpoint1
 
 Aplicação Java com container para exemplo
 
@@ -18,6 +18,7 @@ git clone https://github.com/JoaoMilanezi/fiap-checkpoint1
 ## Instruções
 
 Antes de executar esta aplicação, é preciso obter a imagem do Docker Hub. Para isso, utilize o comando a seguir:
+<br />
 
 docker pull jotamilanezi/fiap-checkpoint1
 
@@ -25,7 +26,7 @@ docker pull jotamilanezi/fiap-checkpoint1
 
 Isso fará com que a imagem necessária para a execução e aplicação seja aplicada em seu ambiente local
 
-
+<br />
 
 Para executar com perfil "dev", utilize o seguinte comando:
 
