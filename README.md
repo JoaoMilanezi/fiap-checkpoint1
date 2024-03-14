@@ -11,7 +11,7 @@ Aplicação Java com container para exemplo
 
 #### Clone
 
-```
+```bash
 git clone https://github.com/JoaoMilanezi/fiap-checkpoint1
 ```
 
